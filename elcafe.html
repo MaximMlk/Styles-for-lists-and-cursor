@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>El Café</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                background-color: rgb(255, 170, 90);
+            }
+            div{
+                width: 800px;
+                margin: auto;
+                position: relative;
+            }
+
+            
+            #cabecera{
+                display: table-cell;
+                vertical-align: bottom;
+                position: relative;
+                width: 630px; /* al ancho y alto del tamaño de la foto restamos el padding de 10px */
+                height: 330px;
+                padding: 10px;
+                left: 75px;
+                background-image: url(/312);
+                font-size: 18pt;
+                color: white;
+                text-align: justify;
+                vertical-align: bottom;
+                cursor: not-allowed;
+
+                
+            }
+            #zonapros{
+                float: left;
+                width: 40%;
+                margin-left: 8%;
+                margin-top: 20px;
+                list-style-image: url(imagenes/megusta.gif);
+                cursor: pointer;
+            }
+            #zonacontras{
+                float: right;
+                width: 48%;
+                margin-top: 20px;
+                list-style-image: url(imagenes/nomegusta.gif);
+                cursor: pointer
+            }
+            blockquote{
+                clear: both;
+                padding: 10px;
+                font-size: 12pt;
+            }
+            footer{
+                padding: 30px 10px 10px;
+                text-align: right;
+            }
+            h3{
+                font-size: 30pt;
+                line-height: 100px;
+                text-align: center;
+            }   
+            h3,footer{
+                background-color: rgba(128,64,64,0.9);
+                cursor: url(imagenes/cursorbrown.png), crosshair;
+            }
+            h3, #cabecera, blockquote{
+                font-family: "Nunito";
+            }
+            footer, #zonapros, #zonacontras{
+                font-family: "Bad Script", cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Pros y contras de tomar café</h3>
+        <div>
+            <div id="cabecera">
+                El café es la bebida aromática más consumida del mundo y la segunda materia más comercializada después del
+                petróleo. La energizante bebida que nos acompaña desde el comienzo de la jornada puede influir de manera
+                positiva sobre nuestra salud, pero su exceso puede conllevar algunos riesgos. 
+            </div>
+            <div id="zonapros">
+                <h4>Por qué sí</h4>
+                <ul>
+                    <li>Es energizante.</li>
+                    <li>Ayuda a estar alerta y concentrarse.</li>
+                    <li>Reduce el dolor de cabeza.</li>
+                    <li>Evita coágulos sanguíneos</li>
+                    <li>Reduce el riesgo de sufrir Parkinson.</li>
+                    <li>Mejora el asma y la alergia.</li>
+                    <li>Es un ayudante de la digestión.</li>
+                </ul>
+            </div>
+            <div id="zonacontras">
+                <h4>Por qué no (en más de tres tazas diarias)</h4>
+                <ul>
+                    <li>Mezclado con sustancias como leche, azúcar y otros aditivos de cremas vegetales deshidratadas,
+                        entre otras, se torna peligroso para la salud.</li>
+                    <li>Aumento de taquicardias diurnas o nocturnas.</li>
+                    <li>Aumento de la tensión arterial.</li>
+                    <li>Posibilidades de enfermedades vasculares.</li>
+                    <li>Aumento del colesterol.</li>
+                    <li>Dolor de cabeza y por su efecto constrictor artereovascular cerebral puede provocar espasmos
+                        arteriales cerebrales.</li>
+                    <li>Dificultad respiratoria ya que puede contraer los bronquios.</li>
+                    <li>Gastritis, diarreas.</li>
+                    <li>Deshidratación importante.</li>
+                    <li>Aumento del riesgo de padecer osteopenia y agravar un cuadro de osteoporosis.</li>
+                    <li>Aumento del riesgo de padecer cáncer de mama y cáncer digestivo.</li>
+                    <li>Aumenta los desórdenes de la curva de glucosa en los diabéticos requiendo más insulina para
+                        compensar el aumento del azúcar en sangre.</li>
+                </ul>
+            </div>
+            <blockquote>
+                En general, se sugiere no superar las tres o cuatro tazas de café por día, aunque una investigación de
+                la Universidad de Harvard reveló que beber hasta seis no influye en un mayor riesgo de muerte.<br>
+                También resulta más beneficioso cuando se toma sin crema, azúcar, saborizantes y/o helado, para no incrementar el valor calórico. En caso de que nos guste con chocolate, es preciso usar una cantidad moderada. 
+            </blockquote>
+        </div>
+        <footer>
+            En caso de dudas, consulte a su médico.
+        </footer>
+    </body>
+</html>
